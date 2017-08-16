@@ -1,6 +1,6 @@
 def fibo():
  num = int(input("How many numbers that generates?:"))
- i = 1
+ t = 1
  if num == 0:
   fib = []
  elif num == 1:
@@ -9,9 +9,9 @@ def fibo():
   fib = [1,1]
  elif num > 2:
   fib = [1,1]
- while i < (num - 1):
-  fib.append(fib[i] + fib[i-1])
-  i += 1
+ while t < (num - 1):
+  fib.append(fib[t] + fib[t-1])
+  t =t+ 1
  return fib
 print(fibo())
 input()
